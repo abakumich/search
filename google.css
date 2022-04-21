@@ -27,22 +27,21 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-/* image */
-.div_img {
+.div_center > div > img {
     min-height: 92px;
-}
-.img_main {
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
     object-position: center bottom;
     width: auto;
 }
-.img_is {
+.div_center > div[id="img"]::after{
+    content: "Зображення";
+    position: relative;
+    right: 60px;
+    transition: all .5s;
     color: #4285f4;
     font: 16px/16px roboto-regular, arial, sans-serif;
-    position:relative;
-    left: -16%;
 }
 /* search input */
 .div_input {
