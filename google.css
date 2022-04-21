@@ -27,7 +27,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-.div_center > div > img {
+.div_center > img {
     min-height: 92px;
     max-height: 100%;
     max-width: 100%;
@@ -35,11 +35,10 @@ body {
     object-position: center bottom;
     width: auto;
 }
-.div_center > div[id="img"]::after{
-    content: "Зображення";
-    position: relative;
-    right: 60px;
-    transition: all .5s;
+.div_center > div > span{
+    position:relative;
+    left: 126px;
+    bottom: 10px;
     color: #4285f4;
     font: 16px/16px roboto-regular, arial, sans-serif;
 }
